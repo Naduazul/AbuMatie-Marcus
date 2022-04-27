@@ -1,0 +1,280 @@
+/* Estilos Generales */
+* {
+    margin:0; 
+    padding:0;
+}
+
+body {
+    font-family:'Roboto', sans-serif; 
+    margin: 0%;
+}
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav li{
+    padding: 5px;
+}
+.home-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ee0a0a;  
+}
+
+.toggle-menu {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor:pointer;
+
+    width: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Estilo en mi navbar */
+nav ul li a {
+    background-color: #ee0a0a;
+    color:#ffffff;
+    font-family:'Send Flowers',cursive ;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+
+/* Estilos en mi Header en Home */  
+.home-header div {
+    background-image: url(../Rotiseria-Marcus/Public/Imagenes/comida-rapida.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    
+}
+.logo {
+    padding: 20px;
+    width: 230px;
+    
+}
+.home-header div {
+    text-align: center;
+}
+
+
+.home-header h1 {
+    color:#f2eff5;
+    background-color: #c50606;
+    font-size: 50px;
+    font-weight: 250px;
+    font-family:'Send Flowers',cursive ;
+    text-align: center;
+}
+
+.mensaje-inicial {
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: 200;
+    padding: 10px 25px;
+      
+}
+.mensaje-inicial span{
+    font-size: 30px;
+    font-family:'Send Flowers' ;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.seccion-2 div {
+    display: inline-block;
+    padding: 30px ;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.embed-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56,75%;
+}
+.container {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%;
+}
+.player {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; 
+}
+.formulario {
+    width: 250px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0, 4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+
+menu {
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300px;
+    font-style:normal;
+}
+
+menu ol li {
+    border-style: solid;
+    border-color: blueviolet;
+    border-radius: 20 px;
+}
+
+/* Trabajo en Galeria */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: minmax(300px,auto);
+    gap: 2px;
+    padding: 2px;
+    grid-auto-flow: dense;
+    background-color: #ee0a0a;
+
+}
+img {
+    object-fit: cover;
+}
+.grid-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.grid-items:hover {
+    filter:opacity(0.9);
+    transform: scale(1.04);
+}
+
+.nosotros {
+    background-color: #ee0a0a;
+    font-size: 20px;
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    
+}
+.nosotros div {
+    padding: 15px;
+}
+
+.viandas {
+    padding:10px;
+    font: bolder;
+    background-color: #ee0a0a;
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.pie-de-pagina {
+    width:100%;
+    background-color: #c50606;
+}
+.pie-de-pagina .grupo-1 {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0;
+}
+.pie-de-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-de-pagina .grupo-1 .box figure img {
+    width: 150px;
+}
+.pie-de-pagina .grupo-1 h2 {
+ color: #f2eff5;
+ margin-bottom: 25px;
+ font-size: 20px;
+
+}
+.pie-de-pagina .grupo-1 ul {
+    color: #f2eff5;
+    margin-bottom: 10px;
+}
+ .pie-de-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fffffff5;
+    margin-right: 10px;
+    background-color: #ee0a0a;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+.pie-de-pagina .grupo-1 .red-social a:hover {
+    color: #070707;
+}
+.pie-de-pagina .grupo-2 {
+    background-color: #ee0a0a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #f2eff5;
+}
+.pie-de-pagina .grupo-2 small {
+    font-size: 15px;
+
+}
+
+
+
+@media screen and (min-width: 768px) { 
+    .pie-de-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0;
+}
+}
