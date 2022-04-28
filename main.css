@@ -31,15 +31,6 @@ nav li{
     background-color: #ee0a0a;  
 }
 
-.toggle-menu {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    cursor:pointer;
-
-    width: 40px;
-}
-
 img {
     max-width: 100%;
 }
@@ -55,13 +46,6 @@ nav ul li a {
 
 
 /* Estilos en mi Header en Home */  
-.home-header div {
-    background-image: url(../Rotiseria-Marcus/Public/Imagenes/comida-rapida.jpg);
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
-    
-}
 .logo {
     padding: 20px;
     width: 230px;
@@ -235,6 +219,9 @@ img {
  font-size: 20px;
 
 }
+
+
+
 .pie-de-pagina .grupo-1 ul {
     color: #f2eff5;
     margin-bottom: 10px;
@@ -263,6 +250,26 @@ img {
 .pie-de-pagina .grupo-2 small {
     font-size: 15px;
 
+}
+
+@media screen and (min-width: 320px) { 
+    .pie-de-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 65px 0;
+}
+
+.home-nav {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    background-color: #ee0a0a; 
+    width: 100%; 
+}
 }
 
 
